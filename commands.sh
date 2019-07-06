@@ -1,7 +1,7 @@
 # Commande permettant d'extraire le PPN d'un fichier Unimarc. L'opton "-o" de grep permet de n'extraire que la partie de la ligne correspondante.
 # L'opton "-F" de awk spécifie le délimiteur dans le fichier et la partie '{print $4}' permet d'extraire le 4ème élément.
 # Le tout est redrgé dans le ficher ppn-extract.txt
-  cat ppn1.txt | grep -o 'http://sudoc.fr/.........' | awk -F "/" '{print $4}' > ppn-extract.txt
+     cat ppn1.txt | grep -o 'http://sudoc.fr/.........' | awk -F "/" '{print $4}' > ppn-extract.txt
   
 # Commande permettant de supprmer tous les fichiers commencant par une chaine de caractères spécifiques.
 # La premère partie de commande "find ." permet de rechercher une chaine de caratère dans le répertoire courant.
